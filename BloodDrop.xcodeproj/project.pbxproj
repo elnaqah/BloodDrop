@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C14CC91516B3B0D3008621CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14CC91416B3B0D3008621CA /* UIKit.framework */; };
+		C14CC91716B3B0D3008621CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14CC91616B3B0D3008621CA /* Foundation.framework */; };
+		C14CC91916B3B0D3008621CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14CC91816B3B0D3008621CA /* CoreGraphics.framework */; };
+		C14CC91F16B3B0D3008621CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C14CC91D16B3B0D3008621CA /* InfoPlist.strings */; };
+		C14CC92116B3B0D3008621CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC92016B3B0D3008621CA /* main.m */; };
+		C14CC92516B3B0D3008621CA /* bdAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC92416B3B0D3008621CA /* bdAppDelegate.m */; };
+		C14CC92716B3B0D3008621CA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC92616B3B0D3008621CA /* Default.png */; };
+		C14CC92916B3B0D3008621CA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC92816B3B0D3008621CA /* Default@2x.png */; };
+		C14CC92B16B3B0D3008621CA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC92A16B3B0D3008621CA /* Default-568h@2x.png */; };
+		C14CC92E16B3B0D3008621CA /* bdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC92D16B3B0D3008621CA /* bdViewController.m */; };
+		C14CC93116B3B0D3008621CA /* bdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C14CC92F16B3B0D3008621CA /* bdViewController.xib */; };
+		C14CC93916B3B0D3008621CA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14CC93816B3B0D3008621CA /* SenTestingKit.framework */; };
+		C14CC93A16B3B0D3008621CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14CC91416B3B0D3008621CA /* UIKit.framework */; };
+		C14CC93B16B3B0D3008621CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14CC91616B3B0D3008621CA /* Foundation.framework */; };
+		C14CC94316B3B0D3008621CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C14CC94116B3B0D3008621CA /* InfoPlist.strings */; };
+		C14CC94616B3B0D3008621CA /* BloodDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC94516B3B0D3008621CA /* BloodDropTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C14CC93C16B3B0D3008621CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C14CC90716B3B0D3008621CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C14CC90F16B3B0D3008621CA;
+			remoteInfo = BloodDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C14CC91016B3B0D3008621CA /* BloodDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14CC91416B3B0D3008621CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C14CC91616B3B0D3008621CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C14CC91816B3B0D3008621CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C14CC91C16B3B0D3008621CA /* BloodDrop-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodDrop-Info.plist"; sourceTree = "<group>"; };
+		C14CC91E16B3B0D3008621CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C14CC92016B3B0D3008621CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C14CC92216B3B0D3008621CA /* BloodDrop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BloodDrop-Prefix.pch"; sourceTree = "<group>"; };
+		C14CC92316B3B0D3008621CA /* bdAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bdAppDelegate.h; sourceTree = "<group>"; };
+		C14CC92416B3B0D3008621CA /* bdAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bdAppDelegate.m; sourceTree = "<group>"; };
+		C14CC92616B3B0D3008621CA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C14CC92816B3B0D3008621CA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C14CC92A16B3B0D3008621CA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C14CC92C16B3B0D3008621CA /* bdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bdViewController.h; sourceTree = "<group>"; };
+		C14CC92D16B3B0D3008621CA /* bdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bdViewController.m; sourceTree = "<group>"; };
+		C14CC93016B3B0D3008621CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/bdViewController.xib; sourceTree = "<group>"; };
+		C14CC93716B3B0D3008621CA /* BloodDropTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BloodDropTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C14CC93816B3B0D3008621CA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C14CC94016B3B0D3008621CA /* BloodDropTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BloodDropTests-Info.plist"; sourceTree = "<group>"; };
+		C14CC94216B3B0D3008621CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C14CC94416B3B0D3008621CA /* BloodDropTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BloodDropTests.h; sourceTree = "<group>"; };
+		C14CC94516B3B0D3008621CA /* BloodDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodDropTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C14CC90D16B3B0D3008621CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14CC91516B3B0D3008621CA /* UIKit.framework in Frameworks */,
+				C14CC91716B3B0D3008621CA /* Foundation.framework in Frameworks */,
+				C14CC91916B3B0D3008621CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14CC93316B3B0D3008621CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14CC93916B3B0D3008621CA /* SenTestingKit.framework in Frameworks */,
+				C14CC93A16B3B0D3008621CA /* UIKit.framework in Frameworks */,
+				C14CC93B16B3B0D3008621CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C14CC90516B3B0D3008621CA = {
+			isa = PBXGroup;
+			children = (
+				C14CC91A16B3B0D3008621CA /* BloodDrop */,
+				C14CC93E16B3B0D3008621CA /* BloodDropTests */,
+				C14CC91316B3B0D3008621CA /* Frameworks */,
+				C14CC91116B3B0D3008621CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C14CC91116B3B0D3008621CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C14CC91016B3B0D3008621CA /* BloodDrop.app */,
+				C14CC93716B3B0D3008621CA /* BloodDropTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C14CC91316B3B0D3008621CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C14CC91416B3B0D3008621CA /* UIKit.framework */,
+				C14CC91616B3B0D3008621CA /* Foundation.framework */,
+				C14CC91816B3B0D3008621CA /* CoreGraphics.framework */,
+				C14CC93816B3B0D3008621CA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C14CC91A16B3B0D3008621CA /* BloodDrop */ = {
+			isa = PBXGroup;
+			children = (
+				C14CC92316B3B0D3008621CA /* bdAppDelegate.h */,
+				C14CC92416B3B0D3008621CA /* bdAppDelegate.m */,
+				C14CC92C16B3B0D3008621CA /* bdViewController.h */,
+				C14CC92D16B3B0D3008621CA /* bdViewController.m */,
+				C14CC92F16B3B0D3008621CA /* bdViewController.xib */,
+				C14CC91B16B3B0D3008621CA /* Supporting Files */,
+			);
+			path = BloodDrop;
+			sourceTree = "<group>";
+		};
+		C14CC91B16B3B0D3008621CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C14CC91C16B3B0D3008621CA /* BloodDrop-Info.plist */,
+				C14CC91D16B3B0D3008621CA /* InfoPlist.strings */,
+				C14CC92016B3B0D3008621CA /* main.m */,
+				C14CC92216B3B0D3008621CA /* BloodDrop-Prefix.pch */,
+				C14CC92616B3B0D3008621CA /* Default.png */,
+				C14CC92816B3B0D3008621CA /* Default@2x.png */,
+				C14CC92A16B3B0D3008621CA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C14CC93E16B3B0D3008621CA /* BloodDropTests */ = {
+			isa = PBXGroup;
+			children = (
+				C14CC94416B3B0D3008621CA /* BloodDropTests.h */,
+				C14CC94516B3B0D3008621CA /* BloodDropTests.m */,
+				C14CC93F16B3B0D3008621CA /* Supporting Files */,
+			);
+			path = BloodDropTests;
+			sourceTree = "<group>";
+		};
+		C14CC93F16B3B0D3008621CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C14CC94016B3B0D3008621CA /* BloodDropTests-Info.plist */,
+				C14CC94116B3B0D3008621CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C14CC90F16B3B0D3008621CA /* BloodDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14CC94916B3B0D3008621CA /* Build configuration list for PBXNativeTarget "BloodDrop" */;
+			buildPhases = (
+				C14CC90C16B3B0D3008621CA /* Sources */,
+				C14CC90D16B3B0D3008621CA /* Frameworks */,
+				C14CC90E16B3B0D3008621CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloodDrop;
+			productName = BloodDrop;
+			productReference = C14CC91016B3B0D3008621CA /* BloodDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C14CC93616B3B0D3008621CA /* BloodDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C14CC94C16B3B0D3008621CA /* Build configuration list for PBXNativeTarget "BloodDropTests" */;
+			buildPhases = (
+				C14CC93216B3B0D3008621CA /* Sources */,
+				C14CC93316B3B0D3008621CA /* Frameworks */,
+				C14CC93416B3B0D3008621CA /* Resources */,
+				C14CC93516B3B0D3008621CA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C14CC93D16B3B0D3008621CA /* PBXTargetDependency */,
+			);
+			name = BloodDropTests;
+			productName = BloodDropTests;
+			productReference = C14CC93716B3B0D3008621CA /* BloodDropTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C14CC90716B3B0D3008621CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = bd;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = elnaqah;
+			};
+			buildConfigurationList = C14CC90A16B3B0D3008621CA /* Build configuration list for PBXProject "BloodDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C14CC90516B3B0D3008621CA;
+			productRefGroup = C14CC91116B3B0D3008621CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C14CC90F16B3B0D3008621CA /* BloodDrop */,
+				C14CC93616B3B0D3008621CA /* BloodDropTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C14CC90E16B3B0D3008621CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14CC91F16B3B0D3008621CA /* InfoPlist.strings in Resources */,
+				C14CC92716B3B0D3008621CA /* Default.png in Resources */,
+				C14CC92916B3B0D3008621CA /* Default@2x.png in Resources */,
+				C14CC92B16B3B0D3008621CA /* Default-568h@2x.png in Resources */,
+				C14CC93116B3B0D3008621CA /* bdViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14CC93416B3B0D3008621CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14CC94316B3B0D3008621CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C14CC93516B3B0D3008621CA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C14CC90C16B3B0D3008621CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14CC92116B3B0D3008621CA /* main.m in Sources */,
+				C14CC92516B3B0D3008621CA /* bdAppDelegate.m in Sources */,
+				C14CC92E16B3B0D3008621CA /* bdViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C14CC93216B3B0D3008621CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14CC94616B3B0D3008621CA /* BloodDropTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C14CC93D16B3B0D3008621CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C14CC90F16B3B0D3008621CA /* BloodDrop */;
+			targetProxy = C14CC93C16B3B0D3008621CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C14CC91D16B3B0D3008621CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C14CC91E16B3B0D3008621CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C14CC92F16B3B0D3008621CA /* bdViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C14CC93016B3B0D3008621CA /* en */,
+			);
+			name = bdViewController.xib;
+			sourceTree = "<group>";
+		};
+		C14CC94116B3B0D3008621CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C14CC94216B3B0D3008621CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C14CC94716B3B0D3008621CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C14CC94816B3B0D3008621CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C14CC94A16B3B0D3008621CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodDrop/BloodDrop-Prefix.pch";
+				INFOPLIST_FILE = "BloodDrop/BloodDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C14CC94B16B3B0D3008621CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodDrop/BloodDrop-Prefix.pch";
+				INFOPLIST_FILE = "BloodDrop/BloodDrop-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C14CC94D16B3B0D3008621CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodDrop.app/BloodDrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodDrop/BloodDrop-Prefix.pch";
+				INFOPLIST_FILE = "BloodDropTests/BloodDropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C14CC94E16B3B0D3008621CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BloodDrop.app/BloodDrop";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BloodDrop/BloodDrop-Prefix.pch";
+				INFOPLIST_FILE = "BloodDropTests/BloodDropTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C14CC90A16B3B0D3008621CA /* Build configuration list for PBXProject "BloodDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14CC94716B3B0D3008621CA /* Debug */,
+				C14CC94816B3B0D3008621CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C14CC94916B3B0D3008621CA /* Build configuration list for PBXNativeTarget "BloodDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14CC94A16B3B0D3008621CA /* Debug */,
+				C14CC94B16B3B0D3008621CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C14CC94C16B3B0D3008621CA /* Build configuration list for PBXNativeTarget "BloodDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14CC94D16B3B0D3008621CA /* Debug */,
+				C14CC94E16B3B0D3008621CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C14CC90716B3B0D3008621CA /* Project object */;
+}

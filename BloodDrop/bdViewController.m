@@ -18,6 +18,9 @@
 {
     [self configureAccelerometer];
     [super viewDidLoad];
+    _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball.png"]];
+    _ball.frame=CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 50, 50);
+    [self.view addSubview:_ball];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -25,22 +28,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-
-- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    NSLog(@"motionBegan");
-}
-
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    NSLog(@"motionEnded");
-}
-
-- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    NSLog(@"motionCancelled");
 }
 
 
@@ -65,10 +52,11 @@
 //    CGRect ballFrame= _ball.frame;
 //    ballFrame=CGRectApplyAffineTransform(ballFrame, translateTrans);
    // if (CGRectContainsRect(self.view.frame, ballFrame)) {
-       // _ball.transform=CGAffineTransformTranslate(_ball.transform, 100*x, 100*y);
-    _ball.center=CGPointMake(_ball.center.x+10*x, _ball.center.y+10*y);
+   // _ball.transform=CGAffineTransformMakeScale(10, 10);
+    _ball.transform=CGAffineTransformTranslate(_ball.transform, 10*y, 10*x);
+    NSLog(@"transform %@",NSStringFromCGAffineTransform(_ball.transform));
+   // _ball.center=CGPointMake(_ball.center.x+10*x, _ball.center.y+10*y);
    // }
-    
     // Do something with the values.
 }
 

@@ -47,16 +47,14 @@
     x = acceleration.x;
     y = acceleration.y;
     z = acceleration.z;
-     NSLog(@"accelerometer %f , %f , %f",x,y,z);
-//    CGAffineTransform translateTrans=CGAffineTransformTranslate(_ball.transform, 10*x, 10*y);
-//    CGRect ballFrame= _ball.frame;
-//    ballFrame=CGRectApplyAffineTransform(ballFrame, translateTrans);
-   // if (CGRectContainsRect(self.view.frame, ballFrame)) {
-   // _ball.transform=CGAffineTransformMakeScale(10, 10);
-    _ball.transform=CGAffineTransformTranslate(_ball.transform, 10*y, 10*x);
-    NSLog(@"transform %@",NSStringFromCGAffineTransform(_ball.transform));
-   // _ball.center=CGPointMake(_ball.center.x+10*x, _ball.center.y+10*y);
-   // }
+     //NSLog(@"accelerometer %f , %f , %f",x,y,z);
+
+    CGAffineTransform translateTrans=CGAffineTransformTranslate(_ball.transform, 10*y, 10*x);
+    CGPoint center= _ball.center;
+    center=CGPointApplyAffineTransform(center, translateTrans);
+    if (CGRectContainsPoint(self.view.bounds, center)) {
+        _ball.transform=translateTrans;//CGAffineTransformTranslate(_ball.transform, 10*y, 10*x);
+    }
     // Do something with the values.
 }
 

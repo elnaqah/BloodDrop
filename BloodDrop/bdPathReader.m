@@ -79,7 +79,7 @@ static bdPathReader * sharedPathReaderInstance;
                     //NSLog(@"size %@",NSStringFromCGSize(imageSize));
                     CGSize scaleSize=CGSizeMake(screenSize.height/imageSize.width, screenSize.width/imageSize.height);
                     point=CGPointApplyAffineTransform(point, CGAffineTransformMakeScale(scaleSize.width, scaleSize.height));
-                    point.y=screenSize.width-point.y;
+                    point.y=screenSize.width-point.y-20;
                     [self.pointList addObject:[NSValue valueWithCGPoint:point]];
                 }
             }

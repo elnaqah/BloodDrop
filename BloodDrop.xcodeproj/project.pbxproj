@@ -24,9 +24,10 @@
 		C14CC94316B3B0D3008621CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C14CC94116B3B0D3008621CA /* InfoPlist.strings */; };
 		C14CC94616B3B0D3008621CA /* BloodDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC94516B3B0D3008621CA /* BloodDropTests.m */; };
 		C14CC95216B3B30C008621CA /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC95116B3B30C008621CA /* ball.png */; };
+		C1950D4D16B40FCE00E49B44 /* Finalheart.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D4B16B40FCE00E49B44 /* Finalheart.png */; };
+		C1950D4E16B40FCE00E49B44 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D4C16B40FCE00E49B44 /* path.png */; };
 		C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */; };
 		C1BF8B3516B3E17F002A1483 /* bdPathReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8B3416B3E17F002A1483 /* bdPathReader.m */; };
-		C1BF8B3716B3E275002A1483 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3616B3E275002A1483 /* path.png */; };
 		C1BF8B3916B3E469002A1483 /* path2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3816B3E469002A1483 /* path2.plist */; };
 		C1BF8B3F16B3F5F7002A1483 /* bd.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8B3E16B3F5F7002A1483 /* bd.m */; };
 		C1BF8B4516B3FC89002A1483 /* path.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B4416B3FC89002A1483 /* path.plist */; };
@@ -66,10 +67,11 @@
 		C14CC94416B3B0D3008621CA /* BloodDropTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BloodDropTests.h; sourceTree = "<group>"; };
 		C14CC94516B3B0D3008621CA /* BloodDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodDropTests.m; sourceTree = "<group>"; };
 		C14CC95116B3B30C008621CA /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		C1950D4B16B40FCE00E49B44 /* Finalheart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Finalheart.png; sourceTree = "<group>"; };
+		C1950D4C16B40FCE00E49B44 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
 		C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C1BF8B3316B3E17F002A1483 /* bdPathReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdPathReader.h; sourceTree = "<group>"; };
 		C1BF8B3416B3E17F002A1483 /* bdPathReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bdPathReader.m; sourceTree = "<group>"; };
-		C1BF8B3616B3E275002A1483 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
 		C1BF8B3816B3E469002A1483 /* path2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = path2.plist; sourceTree = "<group>"; };
 		C1BF8B3D16B3F5F7002A1483 /* bd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bd.h; sourceTree = "<group>"; };
 		C1BF8B3E16B3F5F7002A1483 /* bd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bd.m; sourceTree = "<group>"; };
@@ -135,9 +137,10 @@
 		C14CC91A16B3B0D3008621CA /* BloodDrop */ = {
 			isa = PBXGroup;
 			children = (
+				C1950D4B16B40FCE00E49B44 /* Finalheart.png */,
+				C1950D4C16B40FCE00E49B44 /* path.png */,
 				C1BF8B4416B3FC89002A1483 /* path.plist */,
 				C14CC95116B3B30C008621CA /* ball.png */,
-				C1BF8B3616B3E275002A1483 /* path.png */,
 				C1BF8B3816B3E469002A1483 /* path2.plist */,
 				C1BF8B3316B3E17F002A1483 /* bdPathReader.h */,
 				C1BF8B3416B3E17F002A1483 /* bdPathReader.m */,
@@ -264,9 +267,10 @@
 				C14CC92B16B3B0D3008621CA /* Default-568h@2x.png in Resources */,
 				C14CC93116B3B0D3008621CA /* bdViewController.xib in Resources */,
 				C14CC95216B3B30C008621CA /* ball.png in Resources */,
-				C1BF8B3716B3E275002A1483 /* path.png in Resources */,
 				C1BF8B3916B3E469002A1483 /* path2.plist in Resources */,
 				C1BF8B4516B3FC89002A1483 /* path.plist in Resources */,
+				C1950D4D16B40FCE00E49B44 /* Finalheart.png in Resources */,
+				C1950D4E16B40FCE00E49B44 /* path.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,10 +29,10 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextSetFillColorWithColor(context, [UIColor blueColor].CGColor);
     for (NSValue * value in self.pointList) {
-        CGPoint point=[value CGPointValue];
-        CGContextFillEllipseInRect(context, CGRectMake(point.x-1,point.y-1,2,2));
+        CGRect rect=[value CGRectValue];
+        CGContextFillRect(context, rect);
     }
     // Drawing code
 }

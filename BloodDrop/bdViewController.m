@@ -12,12 +12,13 @@
 #import "bd.h"
 
 #define kAccelerometerFrequency        50.0 //Hz
-#define startPoint CGPointMake(355,500)
+#define startPoint CGPointMake(380,510)
+#define margin CGPointMake(39 ,13)
 #define jumbScale 5
 @interface bdViewController ()
 {
     CADisplayLink * displayLink;
-    NSArray * pathPoints;
+    NSMutableArray * pathPoints;
 }
 @end
 
@@ -29,18 +30,93 @@
     [super viewDidLoad];
     _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball.png"]];
     _ball.frame=CGRectMake(startPoint.x, startPoint.y, 10, 10);
-    [self.view addSubview:_ball];
+    
     displayLink=[CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
     [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     [displayLink setFrameInterval:500];
-    bdPathReader * pathReader=[bdPathReader sharedPathReader];
-    pathPoints=pathReader.pointList;
-    bd * debug=[[bd alloc] initWithFrame:self.view.bounds andPointList:pathPoints];
-    [self.view addSubview:debug];
+
+    pathPoints=[NSMutableArray array];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((815/2)-margin.x, (981/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((836/2)-margin.x, (924/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((860/2)-margin.x, (882/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((869/2)-margin.x, (828/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((875/2)-margin.x, (765/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((884/2)-margin.x, (705/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((899/2)-margin.x, (657/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((917/2)-margin.x, (603/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((932/2)-margin.x, (570/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((977/2)-margin.x, (579/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1019/2)-margin.x, (591/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1064/2)-margin.x, (600/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1100/2)-margin.x, (615/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1136/2)-margin.x, (636/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1145/2)-margin.x, (690/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1139/2)-margin.x, (738/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1136/2)-margin.x, (786/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1133/2)-margin.x, (837/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1148/2)-margin.x, (888/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1166/2)-margin.x, (936/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1190/2)-margin.x, (975/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1223/2)-margin.x, (1008/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1244/2)-margin.x, (1056/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1271/2)-margin.x, (1104/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1295/2)-margin.x, (1146/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1310/2)-margin.x, (1185/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1349/2)-margin.x, (1215/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1391/2)-margin.x, (1206/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1418/2)-margin.x, (1179/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1436/2)-margin.x, (1140/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1439/2)-margin.x, (1083/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1436/2)-margin.x, (1032/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1439/2)-margin.x, (984/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1436/2)-margin.x, (930/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1430/2)-margin.x, (888/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1418/2)-margin.x, (840/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1400/2)-margin.x, (801/2)+margin.y, 50/2, 57/2)]];
+        //bdPathReader * pathReader=[bdPathReader sharedPathReader];
+        pathPoints=pathPoints;
+       bd * debug=[[bd alloc] initWithFrame:self.view.bounds andPointList:pathPoints];
+       [self.view addSubview:debug];
+    [self.view addSubview:_ball];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-
+-(void) pathCollide:(NSArray*) list
+{
+    for (NSValue * value in list) {
+        CGPoint point=[value CGPointValue];
+        [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((point.x/2)-margin.x, (point.y/2)+margin.y, 50/2, 57/2)]];
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -50,13 +126,13 @@
 #pragma mark update
 -(void) update
 {
-    [UIView animateWithDuration:2 animations:^{
+    /*[UIView animateWithDuration:2 animations:^{
         _ball.transform=CGAffineTransformScale(_ball.transform, jumbScale, jumbScale);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:2 animations:^{
             _ball.transform=CGAffineTransformScale(_ball.transform, 1/_ball.transform.a, 1/_ball.transform.a);
         }];
-    }];
+    }];*/
     
     NSLog(@"update ");
 }
@@ -85,10 +161,12 @@
     BOOL intersect=NO;
     //CGRect bound=CGRectMake(center.x-(_ball.bounds.size.width/2), center.y-(_ball.bounds.size.height/2), _ball.bounds.size.width, _ball.bounds.size.height);
     for (NSValue * pointValue in pathPoints) {
-        CGPoint point =[pointValue CGPointValue];
-        intersect=CGRectContainsPoint(_ball.frame, point);
+    //CGRect rect =[[pathPoints objectAtIndex:0] CGRectValue];
+        CGRect rect =[pointValue CGRectValue];
+        intersect|=CGRectContainsPoint(rect, center);
+        //NSLog(@"%@",NSStringFromCGPoint(point));
     }
-    if (CGRectContainsPoint(self.view.bounds, center) && !intersect) {
+    if (CGRectContainsPoint(self.view.bounds, center) && intersect) {
         _ball.transform=translateTrans;//CGAffineTransformTranslate(_ball.transform, 10*y, 10*x);
     }
     // Do something with the values.

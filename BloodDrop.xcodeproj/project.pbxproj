@@ -24,6 +24,8 @@
 		C14CC94316B3B0D3008621CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C14CC94116B3B0D3008621CA /* InfoPlist.strings */; };
 		C14CC94616B3B0D3008621CA /* BloodDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC94516B3B0D3008621CA /* BloodDropTests.m */; };
 		C14CC95216B3B30C008621CA /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC95116B3B30C008621CA /* ball.png */; };
+		C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */; };
+		C1BF8B3216B3DCD7002A1483 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3116B3DCD7002A1483 /* path.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		C14CC94416B3B0D3008621CA /* BloodDropTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BloodDropTests.h; sourceTree = "<group>"; };
 		C14CC94516B3B0D3008621CA /* BloodDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodDropTests.m; sourceTree = "<group>"; };
 		C14CC95116B3B30C008621CA /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C1BF8B3116B3DCD7002A1483 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */,
 				C14CC91516B3B0D3008621CA /* UIKit.framework in Frameworks */,
 				C14CC91716B3B0D3008621CA /* Foundation.framework in Frameworks */,
 				C14CC91916B3B0D3008621CA /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +113,7 @@
 		C14CC91316B3B0D3008621CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */,
 				C14CC91416B3B0D3008621CA /* UIKit.framework */,
 				C14CC91616B3B0D3008621CA /* Foundation.framework */,
 				C14CC91816B3B0D3008621CA /* CoreGraphics.framework */,
@@ -120,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C14CC95116B3B30C008621CA /* ball.png */,
+				C1BF8B3116B3DCD7002A1483 /* path.png */,
 				C14CC92316B3B0D3008621CA /* bdAppDelegate.h */,
 				C14CC92416B3B0D3008621CA /* bdAppDelegate.m */,
 				C14CC92C16B3B0D3008621CA /* bdViewController.h */,
@@ -241,6 +248,7 @@
 				C14CC92B16B3B0D3008621CA /* Default-568h@2x.png in Resources */,
 				C14CC93116B3B0D3008621CA /* bdViewController.xib in Resources */,
 				C14CC95216B3B30C008621CA /* ball.png in Resources */,
+				C1BF8B3216B3DCD7002A1483 /* path.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +462,7 @@
 				C14CC94B16B3B0D3008621CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C14CC94C16B3B0D3008621CA /* Build configuration list for PBXNativeTarget "BloodDropTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +471,7 @@
 				C14CC94E16B3B0D3008621CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

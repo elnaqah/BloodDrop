@@ -7,9 +7,12 @@
 //
 
 #import "bdViewController.h"
+#import <QuartzCore/QuartzCore.h>
 #define kAccelerometerFrequency        50.0 //Hz
 @interface bdViewController ()
-
+{
+    CADisplayLink * displayLink;
+}
 @end
 
 @implementation bdViewController
@@ -19,10 +22,15 @@
     [self configureAccelerometer];
     [super viewDidLoad];
     _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball.png"]];
-    _ball.frame=CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 50, 50);
+    _ball.frame=CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 40, 40);
     [self.view addSubview:_ball];
+    displayLink=[CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
+    [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
+    [displayLink setFrameInterval:500];
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -30,6 +38,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark update
+-(void) update
+{
+    NSLog(@"update ");
+}
 
 -(void)configureAccelerometer
 {

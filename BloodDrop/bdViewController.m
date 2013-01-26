@@ -22,7 +22,7 @@
     [self configureAccelerometer];
     [super viewDidLoad];
     _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball.png"]];
-    _ball.frame=CGRectMake(self.view.frame.size.width/2, self.view.frame.size.height/2, 40, 40);
+    _ball.frame=CGRectMake(34, 414, 40, 40);
     [self.view addSubview:_ball];
     displayLink=[CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
     [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];

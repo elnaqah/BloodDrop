@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface bdViewController : UIViewController
-
+@interface bdViewController : UIViewController<UIAccelerometerDelegate>
+@property (retain) IBOutlet UIImageView * ball;
 @end

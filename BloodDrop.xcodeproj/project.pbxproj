@@ -23,6 +23,7 @@
 		C14CC93B16B3B0D3008621CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C14CC91616B3B0D3008621CA /* Foundation.framework */; };
 		C14CC94316B3B0D3008621CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C14CC94116B3B0D3008621CA /* InfoPlist.strings */; };
 		C14CC94616B3B0D3008621CA /* BloodDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC94516B3B0D3008621CA /* BloodDropTests.m */; };
+		C14CC95216B3B30C008621CA /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC95116B3B30C008621CA /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C14CC94216B3B0D3008621CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C14CC94416B3B0D3008621CA /* BloodDropTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BloodDropTests.h; sourceTree = "<group>"; };
 		C14CC94516B3B0D3008621CA /* BloodDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodDropTests.m; sourceTree = "<group>"; };
+		C14CC95116B3B30C008621CA /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		C14CC91A16B3B0D3008621CA /* BloodDrop */ = {
 			isa = PBXGroup;
 			children = (
+				C14CC95116B3B30C008621CA /* ball.png */,
 				C14CC92316B3B0D3008621CA /* bdAppDelegate.h */,
 				C14CC92416B3B0D3008621CA /* bdAppDelegate.m */,
 				C14CC92C16B3B0D3008621CA /* bdViewController.h */,
@@ -237,6 +240,7 @@
 				C14CC92916B3B0D3008621CA /* Default@2x.png in Resources */,
 				C14CC92B16B3B0D3008621CA /* Default-568h@2x.png in Resources */,
 				C14CC93116B3B0D3008621CA /* bdViewController.xib in Resources */,
+				C14CC95216B3B30C008621CA /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

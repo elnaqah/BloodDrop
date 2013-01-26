@@ -35,6 +35,10 @@
 		C1950D6416B4234A00E49B44 /* Main Menu Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D6316B4234A00E49B44 /* Main Menu Button.png */; };
 		C1950D6616B423EF00E49B44 /* Pause Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D6516B423EF00E49B44 /* Pause Background.png */; };
 		C1950D6A16B4274F00E49B44 /* ball_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D6916B4274E00E49B44 /* ball_small.png */; };
+		C1950D7516B4345000E49B44 /* bd_Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = C1950D7416B4345000E49B44 /* bd_Audio.m */; };
+		C1950D7816B4369700E49B44 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = C1950D7716B4369700E49B44 /* heart.wav */; };
+		C1950D7A16B436FE00E49B44 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1950D7916B436FE00E49B44 /* AVFoundation.framework */; };
+		C1950D7B16B4374000E49B44 /* bd_Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = C1950D7416B4345000E49B44 /* bd_Audio.m */; };
 		C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */; };
 		C1BF8B3516B3E17F002A1483 /* bdPathReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8B3416B3E17F002A1483 /* bdPathReader.m */; };
 		C1BF8B3916B3E469002A1483 /* path2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3816B3E469002A1483 /* path2.plist */; };
@@ -88,6 +92,10 @@
 		C1950D6316B4234A00E49B44 /* Main Menu Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main Menu Button.png"; sourceTree = "<group>"; };
 		C1950D6516B423EF00E49B44 /* Pause Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause Background.png"; sourceTree = "<group>"; };
 		C1950D6916B4274E00E49B44 /* ball_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_small.png; sourceTree = "<group>"; };
+		C1950D7316B4345000E49B44 /* bd_Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bd_Audio.h; sourceTree = "<group>"; };
+		C1950D7416B4345000E49B44 /* bd_Audio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bd_Audio.m; sourceTree = "<group>"; };
+		C1950D7716B4369700E49B44 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		C1950D7916B436FE00E49B44 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C1BF8B3316B3E17F002A1483 /* bdPathReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdPathReader.h; sourceTree = "<group>"; };
 		C1BF8B3416B3E17F002A1483 /* bdPathReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bdPathReader.m; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1950D7A16B436FE00E49B44 /* AVFoundation.framework in Frameworks */,
 				C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */,
 				C14CC91516B3B0D3008621CA /* UIKit.framework in Frameworks */,
 				C14CC91716B3B0D3008621CA /* Foundation.framework in Frameworks */,
@@ -144,6 +153,7 @@
 		C14CC91316B3B0D3008621CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1950D7916B436FE00E49B44 /* AVFoundation.framework */,
 				C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */,
 				C14CC91416B3B0D3008621CA /* UIKit.framework */,
 				C14CC91616B3B0D3008621CA /* Foundation.framework */,
@@ -156,6 +166,9 @@
 		C14CC91A16B3B0D3008621CA /* BloodDrop */ = {
 			isa = PBXGroup;
 			children = (
+				C1950D7716B4369700E49B44 /* heart.wav */,
+				C1950D7316B4345000E49B44 /* bd_Audio.h */,
+				C1950D7416B4345000E49B44 /* bd_Audio.m */,
 				C1950D6916B4274E00E49B44 /* ball_small.png */,
 				C1950D6516B423EF00E49B44 /* Pause Background.png */,
 				C1950D6316B4234A00E49B44 /* Main Menu Button.png */,
@@ -308,6 +321,7 @@
 				C1950D6416B4234A00E49B44 /* Main Menu Button.png in Resources */,
 				C1950D6616B423EF00E49B44 /* Pause Background.png in Resources */,
 				C1950D6A16B4274F00E49B44 /* ball_small.png in Resources */,
+				C1950D7816B4369700E49B44 /* heart.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1950D7B16B4374000E49B44 /* bd_Audio.m in Sources */,
 				C14CC92116B3B0D3008621CA /* main.m in Sources */,
 				C14CC92516B3B0D3008621CA /* bdAppDelegate.m in Sources */,
 				C14CC92E16B3B0D3008621CA /* bdViewController.m in Sources */,
@@ -356,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C14CC94616B3B0D3008621CA /* BloodDropTests.m in Sources */,
+				C1950D7516B4345000E49B44 /* bd_Audio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 #import "bdPathReader.h"
 #import <QuartzCore/QuartzCore.h>
 #import "bd.h"
+#import "bd_Audio.h"
 
 #define kAccelerometerFrequency        50.0 //Hz
 #define startPoint CGPointMake(380,510)
@@ -19,13 +20,17 @@
 {
     CADisplayLink * displayLink;
     NSMutableArray * pathPoints;
+    bd_Audio *audio;
 }
 @end
 
 @implementation bdViewController
 @synthesize ball=_ball;
+@synthesize heart=_heart;
 - (void)viewDidLoad
 {
+    audio=[[bd_Audio alloc] init];
+    [audio Audio:@"%@/heart.wav"];
     [self configureAccelerometer];
     [super viewDidLoad];
     _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball_small.png"]];
@@ -191,14 +196,22 @@
 #pragma mark update
 -(void) update
 {
-    /*[UIView animateWithDuration:1 animations:^{
+    [audio play];
+    [UIView animateWithDuration:1 animations:^{
         _ball.transform=CGAffineTransformScale(_ball.transform, jumbScale, jumbScale);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:1 animations:^{
             _ball.transform=CGAffineTransformScale(_ball.transform, 1/_ball.transform.a, 1/_ball.transform.a);
+        } completion:^(BOOL finished) {
+            [audio stop];
         }];
-    }];*/
+    }];
     
+   /* [UIView animateWithDuration:1 animations:^{
+        
+    }   completion:^(BOOL finished) {
+        
+    }];*/
     NSLog(@"update ");
 }
 

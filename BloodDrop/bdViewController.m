@@ -14,7 +14,7 @@
 #define kAccelerometerFrequency        50.0 //Hz
 #define startPoint CGPointMake(380,510)
 #define margin CGPointMake(39 ,13)
-#define jumbScale 5
+#define jumbScale 4
 @interface bdViewController ()
 {
     CADisplayLink * displayLink;
@@ -28,7 +28,7 @@
 {
     [self configureAccelerometer];
     [super viewDidLoad];
-    _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball.png"]];
+    _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball_small.png"]];
     _ball.frame=CGRectMake(startPoint.x, startPoint.y, 10, 10);
     
     displayLink=[CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
@@ -155,6 +155,8 @@
     [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1233/2)-margin.x, (830/2)+margin.y, 50/2, 57/2)]];
     
     [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1242/2)-margin.x, (820/2)+margin.y, 50/2, 57/2)]];
+    
+     [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1277/2)-margin.x, (600/2)+margin.y, 50/2, 57/2)]];
         //bdPathReader * pathReader=[bdPathReader sharedPathReader];
         pathPoints=pathPoints;
        //bd * debug=[[bd alloc] initWithFrame:self.view.bounds andPointList:pathPoints];
@@ -163,6 +165,16 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+}
 -(void) pathCollide:(NSArray*) list
 {
     for (NSValue * value in list) {
@@ -179,13 +191,13 @@
 #pragma mark update
 -(void) update
 {
-    /*[UIView animateWithDuration:2 animations:^{
+    [UIView animateWithDuration:1 animations:^{
         _ball.transform=CGAffineTransformScale(_ball.transform, jumbScale, jumbScale);
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:2 animations:^{
+        [UIView animateWithDuration:1 animations:^{
             _ball.transform=CGAffineTransformScale(_ball.transform, 1/_ball.transform.a, 1/_ball.transform.a);
         }];
-    }];*/
+    }];
     
     NSLog(@"update ");
 }
@@ -219,6 +231,13 @@
         intersect|=CGRectContainsPoint(rect, center);
         //NSLog(@"%@",NSStringFromCGPoint(point));
     }
+    
+    //last
+    CGRect rectf=[[pathPoints objectAtIndex:[pathPoints count]-1] CGRectValue];
+    if(CGRectContainsPoint(rectf, center))
+    {
+        
+    }
     if (CGRectContainsPoint(self.view.bounds, center) && intersect) {
         _ball.transform=translateTrans;//CGAffineTransformTranslate(_ball.transform, 10*y, 10*x);
     }
@@ -235,4 +254,9 @@
     [self becomeFirstResponder];
 }
 
+
+-(IBAction)mainMenu:(id)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

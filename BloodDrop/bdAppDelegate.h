@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class bdViewController;
+@class bdMenuViewController;
 
 @interface bdAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) bdViewController *viewController;
+@property (strong, nonatomic) bdMenuViewController *viewController;
+@property (strong,nonatomic) UINavigationController * navigationController;
 
 @end

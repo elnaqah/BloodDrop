@@ -29,9 +29,12 @@
 		C1950D5316B41BD500E49B44 /* bdMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1950D5116B41BD500E49B44 /* bdMenuViewController.m */; };
 		C1950D5416B41BD500E49B44 /* bdMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5216B41BD500E49B44 /* bdMenuViewController.xib */; };
 		C1950D5616B41C8600E49B44 /* Final Game Intro1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5516B41C8600E49B44 /* Final Game Intro1.png */; };
-		C1950D5A16B41CED00E49B44 /* Instructions.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5716B41CED00E49B44 /* Instructions.png */; };
-		C1950D5B16B41CED00E49B44 /* New Game Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5816B41CED00E49B44 /* New Game Button.png */; };
-		C1950D5C16B41CED00E49B44 /* Options.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5916B41CED00E49B44 /* Options.png */; };
+		C1950D6016B420E300E49B44 /* Instructions.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5D16B420E300E49B44 /* Instructions.png */; };
+		C1950D6116B420E300E49B44 /* New Game Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5E16B420E300E49B44 /* New Game Button.png */; };
+		C1950D6216B420E300E49B44 /* Options.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5F16B420E300E49B44 /* Options.png */; };
+		C1950D6416B4234A00E49B44 /* Main Menu Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D6316B4234A00E49B44 /* Main Menu Button.png */; };
+		C1950D6616B423EF00E49B44 /* Pause Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D6516B423EF00E49B44 /* Pause Background.png */; };
+		C1950D6A16B4274F00E49B44 /* ball_small.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D6916B4274E00E49B44 /* ball_small.png */; };
 		C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */; };
 		C1BF8B3516B3E17F002A1483 /* bdPathReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8B3416B3E17F002A1483 /* bdPathReader.m */; };
 		C1BF8B3916B3E469002A1483 /* path2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3816B3E469002A1483 /* path2.plist */; };
@@ -79,9 +82,12 @@
 		C1950D5116B41BD500E49B44 /* bdMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bdMenuViewController.m; sourceTree = "<group>"; };
 		C1950D5216B41BD500E49B44 /* bdMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bdMenuViewController.xib; sourceTree = "<group>"; };
 		C1950D5516B41C8600E49B44 /* Final Game Intro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Final Game Intro1.png"; sourceTree = "<group>"; };
-		C1950D5716B41CED00E49B44 /* Instructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instructions.png; sourceTree = "<group>"; };
-		C1950D5816B41CED00E49B44 /* New Game Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New Game Button.png"; sourceTree = "<group>"; };
-		C1950D5916B41CED00E49B44 /* Options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Options.png; sourceTree = "<group>"; };
+		C1950D5D16B420E300E49B44 /* Instructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instructions.png; sourceTree = "<group>"; };
+		C1950D5E16B420E300E49B44 /* New Game Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New Game Button.png"; sourceTree = "<group>"; };
+		C1950D5F16B420E300E49B44 /* Options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Options.png; sourceTree = "<group>"; };
+		C1950D6316B4234A00E49B44 /* Main Menu Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main Menu Button.png"; sourceTree = "<group>"; };
+		C1950D6516B423EF00E49B44 /* Pause Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause Background.png"; sourceTree = "<group>"; };
+		C1950D6916B4274E00E49B44 /* ball_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_small.png; sourceTree = "<group>"; };
 		C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C1BF8B3316B3E17F002A1483 /* bdPathReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdPathReader.h; sourceTree = "<group>"; };
 		C1BF8B3416B3E17F002A1483 /* bdPathReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bdPathReader.m; sourceTree = "<group>"; };
@@ -150,9 +156,12 @@
 		C14CC91A16B3B0D3008621CA /* BloodDrop */ = {
 			isa = PBXGroup;
 			children = (
-				C1950D5716B41CED00E49B44 /* Instructions.png */,
-				C1950D5816B41CED00E49B44 /* New Game Button.png */,
-				C1950D5916B41CED00E49B44 /* Options.png */,
+				C1950D6916B4274E00E49B44 /* ball_small.png */,
+				C1950D6516B423EF00E49B44 /* Pause Background.png */,
+				C1950D6316B4234A00E49B44 /* Main Menu Button.png */,
+				C1950D5D16B420E300E49B44 /* Instructions.png */,
+				C1950D5E16B420E300E49B44 /* New Game Button.png */,
+				C1950D5F16B420E300E49B44 /* Options.png */,
 				C1950D5516B41C8600E49B44 /* Final Game Intro1.png */,
 				C1950D4B16B40FCE00E49B44 /* Finalheart.png */,
 				C1950D4C16B40FCE00E49B44 /* path.png */,
@@ -293,9 +302,12 @@
 				C1950D4E16B40FCE00E49B44 /* path.png in Resources */,
 				C1950D5416B41BD500E49B44 /* bdMenuViewController.xib in Resources */,
 				C1950D5616B41C8600E49B44 /* Final Game Intro1.png in Resources */,
-				C1950D5A16B41CED00E49B44 /* Instructions.png in Resources */,
-				C1950D5B16B41CED00E49B44 /* New Game Button.png in Resources */,
-				C1950D5C16B41CED00E49B44 /* Options.png in Resources */,
+				C1950D6016B420E300E49B44 /* Instructions.png in Resources */,
+				C1950D6116B420E300E49B44 /* New Game Button.png in Resources */,
+				C1950D6216B420E300E49B44 /* Options.png in Resources */,
+				C1950D6416B4234A00E49B44 /* Main Menu Button.png in Resources */,
+				C1950D6616B423EF00E49B44 /* Pause Background.png in Resources */,
+				C1950D6A16B4274F00E49B44 /* ball_small.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

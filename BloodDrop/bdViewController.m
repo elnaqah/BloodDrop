@@ -102,10 +102,63 @@
     [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1418/2)-margin.x, (840/2)+margin.y, 50/2, 57/2)]];
     
     [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1400/2)-margin.x, (801/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1376/2)-margin.x, (768/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1337/2)-margin.x, (774/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1319/2)-margin.x, (807/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1307/2)-margin.x, (846/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1268/2)-margin.x, (843/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1244/2)-margin.x, (843/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1244/2)-margin.x, (765/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1238/2)-margin.x, (729/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1244/2)-margin.x, (693/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1259/2)-margin.x, (654/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1277/2)-margin.x, (600/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((872/2)-margin.x, (792/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((875/2)-margin.x, (741/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1442/2)-margin.x, (1110/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((839/2)-margin.x, (908/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((858/2)-margin.x, (867/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((882/2)-margin.x, (673/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((897/2)-margin.x, (608/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((904/2)-margin.x, (576/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((822/2)-margin.x, (942/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1129/2)-margin.x, (873/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1142/2)-margin.x, (902/2)+margin.y, 50/2, 57/2)]];
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1254/2)-margin.x, (1082/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1229/2)-margin.x, (1033/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1281/2)-margin.x, (1123/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1233/2)-margin.x, (830/2)+margin.y, 50/2, 57/2)]];
+    
+    [pathPoints addObject:[NSValue valueWithCGRect:CGRectMake((1242/2)-margin.x, (820/2)+margin.y, 50/2, 57/2)]];
         //bdPathReader * pathReader=[bdPathReader sharedPathReader];
         pathPoints=pathPoints;
-       bd * debug=[[bd alloc] initWithFrame:self.view.bounds andPointList:pathPoints];
-       [self.view addSubview:debug];
+       //bd * debug=[[bd alloc] initWithFrame:self.view.bounds andPointList:pathPoints];
+      // [self.view addSubview:debug];
     [self.view addSubview:_ball];
 	// Do any additional setup after loading the view, typically from a nib.
 }

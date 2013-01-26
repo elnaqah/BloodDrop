@@ -26,6 +26,12 @@
 		C14CC95216B3B30C008621CA /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC95116B3B30C008621CA /* ball.png */; };
 		C1950D4D16B40FCE00E49B44 /* Finalheart.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D4B16B40FCE00E49B44 /* Finalheart.png */; };
 		C1950D4E16B40FCE00E49B44 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D4C16B40FCE00E49B44 /* path.png */; };
+		C1950D5316B41BD500E49B44 /* bdMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1950D5116B41BD500E49B44 /* bdMenuViewController.m */; };
+		C1950D5416B41BD500E49B44 /* bdMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5216B41BD500E49B44 /* bdMenuViewController.xib */; };
+		C1950D5616B41C8600E49B44 /* Final Game Intro1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5516B41C8600E49B44 /* Final Game Intro1.png */; };
+		C1950D5A16B41CED00E49B44 /* Instructions.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5716B41CED00E49B44 /* Instructions.png */; };
+		C1950D5B16B41CED00E49B44 /* New Game Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5816B41CED00E49B44 /* New Game Button.png */; };
+		C1950D5C16B41CED00E49B44 /* Options.png in Resources */ = {isa = PBXBuildFile; fileRef = C1950D5916B41CED00E49B44 /* Options.png */; };
 		C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */; };
 		C1BF8B3516B3E17F002A1483 /* bdPathReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8B3416B3E17F002A1483 /* bdPathReader.m */; };
 		C1BF8B3916B3E469002A1483 /* path2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3816B3E469002A1483 /* path2.plist */; };
@@ -69,6 +75,13 @@
 		C14CC95116B3B30C008621CA /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		C1950D4B16B40FCE00E49B44 /* Finalheart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Finalheart.png; sourceTree = "<group>"; };
 		C1950D4C16B40FCE00E49B44 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
+		C1950D5016B41BD500E49B44 /* bdMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdMenuViewController.h; sourceTree = "<group>"; };
+		C1950D5116B41BD500E49B44 /* bdMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bdMenuViewController.m; sourceTree = "<group>"; };
+		C1950D5216B41BD500E49B44 /* bdMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bdMenuViewController.xib; sourceTree = "<group>"; };
+		C1950D5516B41C8600E49B44 /* Final Game Intro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Final Game Intro1.png"; sourceTree = "<group>"; };
+		C1950D5716B41CED00E49B44 /* Instructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Instructions.png; sourceTree = "<group>"; };
+		C1950D5816B41CED00E49B44 /* New Game Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New Game Button.png"; sourceTree = "<group>"; };
+		C1950D5916B41CED00E49B44 /* Options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Options.png; sourceTree = "<group>"; };
 		C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C1BF8B3316B3E17F002A1483 /* bdPathReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdPathReader.h; sourceTree = "<group>"; };
 		C1BF8B3416B3E17F002A1483 /* bdPathReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bdPathReader.m; sourceTree = "<group>"; };
@@ -137,6 +150,10 @@
 		C14CC91A16B3B0D3008621CA /* BloodDrop */ = {
 			isa = PBXGroup;
 			children = (
+				C1950D5716B41CED00E49B44 /* Instructions.png */,
+				C1950D5816B41CED00E49B44 /* New Game Button.png */,
+				C1950D5916B41CED00E49B44 /* Options.png */,
+				C1950D5516B41C8600E49B44 /* Final Game Intro1.png */,
 				C1950D4B16B40FCE00E49B44 /* Finalheart.png */,
 				C1950D4C16B40FCE00E49B44 /* path.png */,
 				C1BF8B4416B3FC89002A1483 /* path.plist */,
@@ -152,6 +169,9 @@
 				C14CC91B16B3B0D3008621CA /* Supporting Files */,
 				C1BF8B3D16B3F5F7002A1483 /* bd.h */,
 				C1BF8B3E16B3F5F7002A1483 /* bd.m */,
+				C1950D5016B41BD500E49B44 /* bdMenuViewController.h */,
+				C1950D5116B41BD500E49B44 /* bdMenuViewController.m */,
+				C1950D5216B41BD500E49B44 /* bdMenuViewController.xib */,
 			);
 			path = BloodDrop;
 			sourceTree = "<group>";
@@ -271,6 +291,11 @@
 				C1BF8B4516B3FC89002A1483 /* path.plist in Resources */,
 				C1950D4D16B40FCE00E49B44 /* Finalheart.png in Resources */,
 				C1950D4E16B40FCE00E49B44 /* path.png in Resources */,
+				C1950D5416B41BD500E49B44 /* bdMenuViewController.xib in Resources */,
+				C1950D5616B41C8600E49B44 /* Final Game Intro1.png in Resources */,
+				C1950D5A16B41CED00E49B44 /* Instructions.png in Resources */,
+				C1950D5B16B41CED00E49B44 /* New Game Button.png in Resources */,
+				C1950D5C16B41CED00E49B44 /* Options.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +335,7 @@
 				C14CC92E16B3B0D3008621CA /* bdViewController.m in Sources */,
 				C1BF8B3516B3E17F002A1483 /* bdPathReader.m in Sources */,
 				C1BF8B3F16B3F5F7002A1483 /* bd.m in Sources */,
+				C1950D5316B41BD500E49B44 /* bdMenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -191,13 +191,13 @@
 #pragma mark update
 -(void) update
 {
-    [UIView animateWithDuration:1 animations:^{
+    /*[UIView animateWithDuration:1 animations:^{
         _ball.transform=CGAffineTransformScale(_ball.transform, jumbScale, jumbScale);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:1 animations:^{
             _ball.transform=CGAffineTransformScale(_ball.transform, 1/_ball.transform.a, 1/_ball.transform.a);
         }];
-    }];
+    }];*/
     
     NSLog(@"update ");
 }

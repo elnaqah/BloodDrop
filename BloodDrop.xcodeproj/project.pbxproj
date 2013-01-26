@@ -25,7 +25,11 @@
 		C14CC94616B3B0D3008621CA /* BloodDropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C14CC94516B3B0D3008621CA /* BloodDropTests.m */; };
 		C14CC95216B3B30C008621CA /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C14CC95116B3B30C008621CA /* ball.png */; };
 		C1BF8B2F16B3D757002A1483 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */; };
-		C1BF8B3216B3DCD7002A1483 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3116B3DCD7002A1483 /* path.png */; };
+		C1BF8B3516B3E17F002A1483 /* bdPathReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8B3416B3E17F002A1483 /* bdPathReader.m */; };
+		C1BF8B3716B3E275002A1483 /* path.png in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3616B3E275002A1483 /* path.png */; };
+		C1BF8B3916B3E469002A1483 /* path2.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B3816B3E469002A1483 /* path2.plist */; };
+		C1BF8B3F16B3F5F7002A1483 /* bd.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8B3E16B3F5F7002A1483 /* bd.m */; };
+		C1BF8B4516B3FC89002A1483 /* path.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1BF8B4416B3FC89002A1483 /* path.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +67,13 @@
 		C14CC94516B3B0D3008621CA /* BloodDropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BloodDropTests.m; sourceTree = "<group>"; };
 		C14CC95116B3B30C008621CA /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		C1BF8B2E16B3D757002A1483 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		C1BF8B3116B3DCD7002A1483 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
+		C1BF8B3316B3E17F002A1483 /* bdPathReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdPathReader.h; sourceTree = "<group>"; };
+		C1BF8B3416B3E17F002A1483 /* bdPathReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bdPathReader.m; sourceTree = "<group>"; };
+		C1BF8B3616B3E275002A1483 /* path.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = path.png; sourceTree = "<group>"; };
+		C1BF8B3816B3E469002A1483 /* path2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = path2.plist; sourceTree = "<group>"; };
+		C1BF8B3D16B3F5F7002A1483 /* bd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bd.h; sourceTree = "<group>"; };
+		C1BF8B3E16B3F5F7002A1483 /* bd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bd.m; sourceTree = "<group>"; };
+		C1BF8B4416B3FC89002A1483 /* path.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = path.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +135,20 @@
 		C14CC91A16B3B0D3008621CA /* BloodDrop */ = {
 			isa = PBXGroup;
 			children = (
+				C1BF8B4416B3FC89002A1483 /* path.plist */,
 				C14CC95116B3B30C008621CA /* ball.png */,
-				C1BF8B3116B3DCD7002A1483 /* path.png */,
+				C1BF8B3616B3E275002A1483 /* path.png */,
+				C1BF8B3816B3E469002A1483 /* path2.plist */,
+				C1BF8B3316B3E17F002A1483 /* bdPathReader.h */,
+				C1BF8B3416B3E17F002A1483 /* bdPathReader.m */,
 				C14CC92316B3B0D3008621CA /* bdAppDelegate.h */,
 				C14CC92416B3B0D3008621CA /* bdAppDelegate.m */,
 				C14CC92C16B3B0D3008621CA /* bdViewController.h */,
 				C14CC92D16B3B0D3008621CA /* bdViewController.m */,
 				C14CC92F16B3B0D3008621CA /* bdViewController.xib */,
 				C14CC91B16B3B0D3008621CA /* Supporting Files */,
+				C1BF8B3D16B3F5F7002A1483 /* bd.h */,
+				C1BF8B3E16B3F5F7002A1483 /* bd.m */,
 			);
 			path = BloodDrop;
 			sourceTree = "<group>";
@@ -248,7 +264,9 @@
 				C14CC92B16B3B0D3008621CA /* Default-568h@2x.png in Resources */,
 				C14CC93116B3B0D3008621CA /* bdViewController.xib in Resources */,
 				C14CC95216B3B30C008621CA /* ball.png in Resources */,
-				C1BF8B3216B3DCD7002A1483 /* path.png in Resources */,
+				C1BF8B3716B3E275002A1483 /* path.png in Resources */,
+				C1BF8B3916B3E469002A1483 /* path2.plist in Resources */,
+				C1BF8B4516B3FC89002A1483 /* path.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +304,8 @@
 				C14CC92116B3B0D3008621CA /* main.m in Sources */,
 				C14CC92516B3B0D3008621CA /* bdAppDelegate.m in Sources */,
 				C14CC92E16B3B0D3008621CA /* bdViewController.m in Sources */,
+				C1BF8B3516B3E17F002A1483 /* bdPathReader.m in Sources */,
+				C1BF8B3F16B3F5F7002A1483 /* bd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

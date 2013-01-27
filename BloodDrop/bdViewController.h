@@ -11,4 +11,5 @@
 @interface bdViewController : UIViewController<UIAccelerometerDelegate>
 @property (retain) IBOutlet UIImageView * ball;
 @property (retain) IBOutlet UIImageView * heart;
+@property (retain) IBOutlet UIButton * btn;
 @end

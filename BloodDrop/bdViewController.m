@@ -36,6 +36,19 @@
     _ball=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ball_small.png"]];
     _ball.frame=CGRectMake(startPoint.x, startPoint.y, 10, 10);
     
+    UIImageView * back=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Pause Background.png"]];
+    back.frame=self.view.bounds;
+    [self.view addSubview:back];
+    
+
+    
+    self.heart=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Finalheart.png"]];
+    self.heart.frame=self.view.bounds;
+    [self.view addSubview:self.heart];
+    UIImageView * path=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"path.png"]];
+    path.frame=self.view.bounds;
+    [self.view addSubview:path];
+    [self.view bringSubviewToFront:self.btn];
     displayLink=[CADisplayLink displayLinkWithTarget:self selector:@selector(update)];
     [displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     [displayLink setFrameInterval:500];
@@ -207,11 +220,13 @@
         }];
     }];
     
-   /* [UIView animateWithDuration:1 animations:^{
-        
+   [UIView animateWithDuration:1 animations:^{
+        self.heart.transform=CGAffineTransformMakeScale( 0.9, 0.9);
     }   completion:^(BOOL finished) {
-        
-    }];*/
+        [UIView animateWithDuration:1 animations:^{
+            self.heart.transform=CGAffineTransformIdentity;
+        }];
+    }];
     NSLog(@"update ");
 }
 
